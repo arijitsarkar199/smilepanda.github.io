@@ -6,7 +6,8 @@ function linkclick(){
         alert("Please fill username and password")
     }
     else{
-        window.assign("index.html")
+        window.location.assign("../../index.html")
+
     }
 }
 // LandingPage End
