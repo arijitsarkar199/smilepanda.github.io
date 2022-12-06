@@ -1617,7 +1617,7 @@ nav ul li a:hover::before {
     position: absolute;
     width: 0;
     height: 0;
-    background-image: url("Raw/Gif/panner.gif");
+    background-image: url("../../Raw/Gif/panner.gif");
     background-size: 100%;
 }
 
