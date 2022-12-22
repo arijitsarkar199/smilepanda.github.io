@@ -154,7 +154,30 @@
     color: #ffffff;
 
 }
-
+.homeLanding{
+    position: absolute;
+    margin-top: -500px;
+    font-size: 18px;
+    margin-left: 3px;
+}
+#eeArrow{
+    margin-top: 5px;
+    margin-left: 7px;
+    position: absolute;
+    font-size: 14px;
+}
+.myHomeLanding{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.homeLanding a{
+    text-decoration: none;
+    color: #000000;
+}
+.homeLanding a:hover{
+    color: #f46b27;
+    transition: 0.3s;
+}
 @media only screen and (min-width:320px) and (max-width:437px){
     .login form{
         width: 290px;
@@ -218,6 +241,21 @@
     #eye{
         margin-right: -220px;
      border-radius: 50%;
+    }
+    .homeLanding{
+        position: absolute;
+        margin-top: -500px;
+        font-size: 15px;
+        margin-left: 3px;
+    }
+    #eeArrow{
+        margin-top: 4px;
+        margin-left: 8px;
+        position: absolute;
+        font-size: 12px;
+    }
+    .myHomeLanding{
+        margin-left: 30px;
     }
 }
   /* LandingPage End */
