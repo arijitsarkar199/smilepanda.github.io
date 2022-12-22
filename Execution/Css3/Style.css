@@ -1761,7 +1761,6 @@ nav ul li a:hover::before {
     background-image: url("../../Raw/Gif/choumin.gif");
     background-size: 100%;
 }
-
 #bestsellerEight:hover:before {
     width: 100%;
     height: 51%;
@@ -1823,9 +1822,9 @@ nav ul li a:hover::before {
     color: rgb(0, 0, 0);
 }
 
-#heart:hover {
+/* #heart:hover {
     color: #cf2323;
-}
+} */
 
 @media only screen and (min-width:768px) and (max-width:1151px) {
     .bestSeller {
