@@ -169,6 +169,7 @@
 .myHomeLanding{
     margin-left: 30px;
     cursor: pointer;
+    color: #6bcc4e;
 }
 .homeLanding a{
     text-decoration: none;
