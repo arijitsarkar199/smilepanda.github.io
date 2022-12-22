@@ -53,6 +53,13 @@
     border-bottom-right-radius: 50px;
     outline: none;
 }
+#eye{
+    position: absolute;
+    margin-right: -270px;
+ border-radius: 50%;
+ cursor: pointer;
+ color: #464141de;
+}
 .loginZero{
     display: flex;
     justify-content: center;
@@ -76,6 +83,7 @@
     margin-top: 20px;
 
 }
+
 .loginThree{
     display: flex;
     justify-content: center;
