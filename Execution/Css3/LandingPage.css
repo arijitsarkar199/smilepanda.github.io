@@ -215,5 +215,9 @@
         margin-left: 2px;
         transition: 0.5s;
     }
+    #eye{
+        margin-right: -220px;
+     border-radius: 50%;
+    }
 }
   /* LandingPage End */
