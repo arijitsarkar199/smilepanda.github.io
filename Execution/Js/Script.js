@@ -1,13 +1,16 @@
 // Header Start
 let toggleopen=document.getElementById("navbar");
 let fabars=document.getElementById("fabars");
+let myshoppingCart=document.getElementById("myshoppingCart");
 const opennav=()=>{
     toggleopen.className="openbar";
     fabars.style.display="none";
+    myshoppingCart.style.marginTop="-200px"
 }
 const closenav=()=>{
     toggleopen.className="closebar";
     fabars.style.display="block";
+    myshoppingCart.style.marginTop="0px"
 }
 // cart-shopping start
 let count=0;
