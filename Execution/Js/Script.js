@@ -9,6 +9,24 @@ const closenav=()=>{
     toggleopen.className="closebar";
     fabars.style.display="block";
 }
+// cart-shopping start
+let count=0;
+let counter=document.getElementById("counter");
+let addAnimationa= document.getElementsByClassName("addAnimation")
+for(let x of addAnimationa){
+    x.addEventListener("click",event=>{
+     const c1=counter.classList;
+     const c="animatiosAdd";
+     count++;
+    
+     counter.innerText=count;
+     c1.remove(c,c1.contains(c));
+     setTimeout(()=>
+     counter.classList.add("animatiosAdd")
+     ,1)
+    })
+}
+// cart-shopping end
 // Header End
 // DeliveryAdd Start
 let deliveryTextspan=document.getElementsByClassName("deliveryTextspan");
@@ -31,7 +49,7 @@ let heartClick=()=>{
 let heart2=document.getElementById("heart2");
 let heartClick2=()=>{
     if(heart2.style.color=="red"){
-
+        
         heart2.style.color="#000000";
     }else{
         heart2.style.color="red";
@@ -93,3 +111,4 @@ let heartClick8=()=>{
     }
 }
 // Best Seller End
+

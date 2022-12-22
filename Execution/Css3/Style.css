@@ -160,6 +160,66 @@ nav ul li a:hover::before {
     color: #ffffff;
     cursor: pointer;
 }
+.shoppingCart{
+    width: 50px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    position: relative;
+margin-right: 5px;
+    /* background-color: #008cdd; */
+}
+.shoppingCart span{
+    user-select: none;
+    position: absolute;
+    background-color: #eb1919;
+    color: rgb(255, 255, 255);
+    width: 1.1rem;
+    height: 1.1rem;
+    font-size: .7rem;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1.1rem;
+    right: .1rem;
+}
+.shoppingCart span:not(.animatiosAdd){
+    display: none;
+}
+.shoppingCart span .animatiosAdd{
+    animation: countee .4s ease-in-out;
+}
+@keyframes countee{
+    from{
+        top: -2rem;
+        right: -1.8rem;
+        transform: rotate(120deg);
+    }
+    25%{
+        top: -.2rem;
+        right: -1.2rem;
+        transform: rotate(80deg);
+    }
+    50%{
+        top: -.4rem;
+        right: -.6rem;
+        transform: rotate(60deg);
+    }
+    75%{
+        top: -.4rem;
+        right: -0rem;
+        transform: rotate(30deg);
+    }
+    to{
+        top: .2rem;
+        right: .3rem;
+        transform: rotate(0deg);
+    }
+}
 
 @media only screen and (min-width:768px) and (max-width:1151px) {
     .myheader {
@@ -284,7 +344,18 @@ nav ul li a:hover::before {
     .closebar {
         margin-right: -520px;
     }
-
+    .shoppingCart{
+        width: 50px;
+        height: 60px;
+        margin-right: 5px;
+    }
+    .shoppingCart span{
+        width: 1.1rem;
+        height: 1.1rem;
+        font-size: .7rem;
+        top: .5rem;
+        right: .1rem;
+    }
 }
 
 @media only screen and (min-width:320px) and (max-width:425px) {
@@ -331,7 +402,7 @@ nav ul li a:hover::before {
     }
 
     .searchbar input {
-        width: 180px;
+        width: 160px;
         height: 18px;
         font-size: 10px;
         border: 2px solid #9eef79;
@@ -364,7 +435,19 @@ nav ul li a:hover::before {
     .closebar {
         margin-right: -520px;
     }
-
+    .shoppingCart{
+        width: 50px;
+        height: 44px;
+        margin-right: -5px;
+        font-size: 15px;
+    }
+    .shoppingCart span{
+        width: .8rem;
+        height: .8rem;
+        font-size: .6rem;
+        top: .4rem;
+        right: .3rem;
+    }
 }
 /* Header End */
 /* Slider Start */
