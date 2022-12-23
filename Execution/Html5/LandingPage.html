@@ -1,41 +1,81 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign In</title>
-<link rel="stylesheet" href="../Css3/LandingPage.css" type="text/css">
-<link rel="stylesheet" href="../Fontawesome/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../Css3/LandingPage.css" type="text/css">
+    <link rel="stylesheet" href="../Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
 ">
 </head>
+
 <body>
     <!-- LandingPage Start  -->
     <div class="login">
-        <h1 class="homeLanding"><span><a href="../../index.html" title="Home">Home</a></span><span> <i class="fa-solid fa-arrow-right" id="eeArrow"></i></span> <span class="myHomeLanding" title="LandingPage">LandingPage</span></h1>
-        <form>
+        <form id="mylogin">
             <div class="loginZero">
                 <img src="../../Raw/Png/logo.png" alt="image" title="Smile Panda">
             </div>
             <div class="loginOne">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" name="text" id="text" placeholder="Username" required>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="text" id="text" placeholder="Username" required>
             </div>
             <div class="loginTwo">
                 <i class="fa-solid fa-lock"></i>
                 <input type="password" spellcheck="false" name="password" id="password" placeholder="Password" required>
-                    <i class="fa-solid fa-eye-slash toggle" id="eye"></i>
+                <i class="fa-solid fa-eye-slash toggle" id="eye"></i>
             </div>
             <div class="loginThree">
-                    <input type="button" value="Sign In" id="submit" title="Sign In" onclick="linkclick()">
+                <input type="button" value="Sign In" id="submit" title="Sign In" onclick="linkclick()">
             </div>
             <div>
-                <h3><a href="#" title="Forgot Password">Forgot Password?</a> <span>or</span> <a href="#" title="Sign Up">Sign Up</a></h3>
+                <h3><a href="#" title="Forgot Password">Forgot Password?</a> <span>or</span> <a href="#"
+                        title="Sign Up" onclick="myloginclick()">Sign Up</a></h3>
             </div>
             <div class="loginMedia">
                 <hr>
                 <h4>Login with social media</h4>
                 <div class="loginIcon">
-                    <i class="fa-brands fa-square-facebook"id="facebook" title="facebook"></i>
+                    <i class="fa-brands fa-square-facebook" id="facebook" title="facebook"></i>
+                    <i class="fa-brands fa-square-instagram" id="instagram" title="instagram"></i>
+                    <i class="fa-brands fa-square-twitter" id="twitter" title="twitter"></i>
+                </div>
+            </div>
+        </form>
+        <form id="signIn">
+            <div class="loginZero">
+                <img src="../../Raw/Png/logo.png" alt="image" title="Smile Panda">
+            </div>
+            <div class="loginOne">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="text" id="text" placeholder="Pick a username" required>
+            </div>
+            <div class="loginTwo" id="myloginTwo">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" spellcheck="false" name="password" id="password" placeholder="Make a password" required>
+                <i class="fa-solid fa-eye-slash toggle" id="eye"></i>
+            </div>
+            <div class="loginOne">
+                <i class="fa-solid fa-phone"></i>
+                <input type="text" name="text" id="text" placeholder="Enter your Phone (optional)" required>
+            </div>
+            <div class="loginOne">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" name="text" id="text" placeholder="Enter your email (optional)" required>
+            </div>
+            <div class="loginThree">
+                <input type="button" value="Sign Up" id="submit" title="Sign In" onclick="linkclick()">
+            </div>
+            <div>
+                <h3><a href="#" title="Forgot Password">Forgot Password?</a> <span>or</span> <a href="#"
+                        title="Sign Up" onclick="signInclick()">Sign In</a></h3>
+            </div>
+            <div class="loginMedia">
+                <hr>
+                <h4>Login with social media</h4>
+                <div class="loginIcon">
+                    <i class="fa-brands fa-square-facebook" id="facebook" title="facebook"></i>
                     <i class="fa-brands fa-square-instagram" id="instagram" title="instagram"></i>
                     <i class="fa-brands fa-square-twitter" id="twitter" title="twitter"></i>
                 </div>
@@ -45,4 +85,5 @@
     <!-- LandingPage End  -->
     <script src="../Js/LandingPage.js"></script>
 </body>
+
 </html>

@@ -27,3 +27,14 @@ toggle.addEventListener("click",()=>{
     }
 })
 // password end
+let mylogin=document.getElementById("mylogin");
+let signIn=document.getElementById("signIn");
+function myloginclick(){
+    mylogin.style.display="none";
+    signIn.style.display="block";
+    
+}
+function signInclick(){
+    mylogin.style.display="block";
+    signIn.style.display="none";
+}
