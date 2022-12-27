@@ -22,7 +22,7 @@
                     <img src="Raw/Png/logo.png" alt="image" title="Smile Panda" id="logos">
                 </div>
                 <div class="searchbar">
-                    <input type="text" name="search" placeholder="Search..." required>
+                    <input type="text" name="search" placeholder="Search..." autocomplete="off" required>
                     <button type="submit" title="Search">Search</button>
                 </div>
                 <!-- Nav Star -->
@@ -40,7 +40,7 @@
                 <i class="fa-solid fa-bars" id="fabars" onclick="opennav()"></i>
                 <div class="shoppingCart" id="myshoppingCart">
                     <span id="counter">1</span>
-                    <i class="fa-solid fa-cart-shopping" title="cart"></i>
+                    <i class="fa-solid fa-cart-shopping" title="Add to Cart"></i>
                 </div>
                 <!-- Nav End -->
             </header>
@@ -73,6 +73,9 @@
                             </div>
                         </div>
                         <div class="aboutText">
+                            <video autoplay muted loop id="myVideos">
+                                <source src="raw/MP4/videoOne.mp4" type="video/mp4">
+                            </video>
                             <h1>We cook the best tasty food</h1>
                             <p>We cook the best food in the entire city, with excellent<br> customer service. We provied
                                 the best meals and at<br> the best price. <span id="VisitUs">Visit us.</span></p>
@@ -94,63 +97,71 @@
                         </div>
                     </div>
                     <div class="allMenus">
-                        <div class="menuImg" id="biryani">
+                        <div class="menuImg" id="biryani" title="Biryani">
                             <div class="menuImage">
                                 <img src="Raw/Png/menu1.png" alt="image">
                             </div>
                             <h1>Biryani</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>99</h4>
                         </div>
-                        <div class="menuImg" id="momo">
+                        <div class="menuImg" id="momo" title="Momo">
                             <div class="menuImage">
                                 <img src="Raw/Png/menu2.png" alt="image">
                             </div>
                             <h1>Momo</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>65</h4>
                         </div>
-                        <div class="menuImg" id="chowmein">
+                        <div class="menuImg" id="chowmein" title="Chowmein">
                             <div class="menuImage">
                                 <img src="Raw/Png/menu3.png" alt="image">
                             </div>
                             <h1>Chowmein</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>80</h4>
                         </div>
-                        <div class="menuImg" id="burger">
+                        <div class="menuImg" id="burger" title="Burger">
                             <div class="menuImage">
                                 <img src="Raw/Png/menu4.png" alt="image">
                             </div>
                             <h1>Burger</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>55</h4>
                         </div>
                     </div>
                     <div class="allMenus">
-                        <div class="menuImg" id="friedRice">
+                        <div class="menuImg" id="friedRice" title="Fried Rice">
                             <div class="menuImage" id="menuImageone">
                                 <img src="Raw/Png/menu5.png" alt="image">
                             </div>
                             <h1>Fried Rice</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>98</h4>
                         </div>
-                        <div class="menuImg" id="rolls">
+                        <div class="menuImg" id="rolls" title="Rolls">
                             <div class="menuImage">
                                 <img src="Raw/Png/menu6.png" alt="image">
                             </div>
                             <h1>Rolls</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>45</h4>
                         </div>
-                        <div class="menuImg" id="supe">
+                        <div class="menuImg" id="supe" title="Supe">
                             <div class="menuImage" id="menuImagetwo">
                                 <img src="Raw/Png/menu7.png" alt="image">
                             </div>
                             <h1>Supe</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>75</h4>
                         </div>
-                        <div class="menuImg" id="pizza">
+                        <div class="menuImg" id="pizza" title="Pizza">
                             <div class="menuImage">
                                 <img src="Raw/Png/menu8.png" alt="image">
                             </div>
                             <h1>Pizza</h1>
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>98</h4>
                         </div>
                     </div>
                 </section>
@@ -217,7 +228,7 @@
                             <h3>Chicken Tikka</h3>
                             <p>3.9<i class="fa-solid fa-star"></i></p>
                         </div>
-                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>180 for one</h4>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>120 for one</h4>
                         <button class="addAnimation" onclick="cardClick()">Add to Cart</button>
                         <div id="heart">
                             <i class="fa-regular fa-heart" id="mynewHeart"></i>
@@ -230,7 +241,7 @@
                             <h3>Indian Thali</h3>
                             <p>4.2<i class="fa-solid fa-star"></i></p>
                         </div>
-                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>250 for one</h4>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>155 for one</h4>
                         <button class="addAnimation" onclick="cardClick()">Add to Cart</button>
                         <div id="heart">
                             <i class="fa-regular fa-heart" id="mynewHeart"></i>
@@ -243,7 +254,7 @@
                             <h3>Banana Leaf Thali</h3>
                             <p>4.0<i class="fa-solid fa-star"></i></p>
                         </div>
-                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>100 for one</h4>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>110 for one</h4>
                         <button class="addAnimation" onclick="cardClick()">Add to Cart</button>
                         <div id="heart">
                             <i class="fa-regular fa-heart" id="mynewHeart"></i>
@@ -258,7 +269,7 @@
                             <h3>Burger Combo</h3>
                             <p>4.0<i class="fa-solid fa-star"></i></p>
                         </div>
-                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>120 for one</h4>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>122 for one</h4>
                         <button class="addAnimation" onclick="cardClick()">Add to Cart</button>
                         <div id="heart">
                             <i class="fa-regular fa-heart" id="mynewHeart"></i>
@@ -271,7 +282,7 @@
                             <h3>Chicken Momo</h3>
                             <p>4.5<i class="fa-solid fa-star"></i></p>
                         </div>
-                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>155 for one</h4>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>75 for one</h4>
                         <button class="addAnimation" onclick="cardClick()">Add to Cart</button>
                         <div id="heart">
                             <i class="fa-regular fa-heart" id="mynewHeart"></i>
@@ -284,7 +295,7 @@
                             <h3>Chicken Roll</h3>
                             <p>4.5<i class="fa-solid fa-star"></i></p>
                         </div>
-                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>105 for one</h4>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>55 for one</h4>
                         <button class="addAnimation" onclick="cardClick()">Add to Cart</button>
                         <div id="heart">
                             <i class="fa-regular fa-heart" id="mynewHeart"></i>
@@ -297,7 +308,7 @@
                             <h3>Mixed Chowmein</h3>
                             <p>4.8<i class="fa-solid fa-star"></i></p>
                         </div>
-                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>135 for one</h4>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>115 for one</h4>
                         <button class="addAnimation" onclick="cardClick()">Add to Cart</button>
                         <div id="heart">
                             <i class="fa-regular fa-heart" id="mynewHeart"></i>
@@ -396,7 +407,7 @@
                     <div class="oneTestimonial">
                         <div class="testimonialsOne" id="subhajit">
                             <div class="testimonialsText">
-                                <h2>“Pizza was delicious.. i will come<br> again.” - <span
+                                <h2>“Pizza was delicious.. I will come<br> again.” - <span
                                         class="testimonialsSpan">Subhadip Singh</span></h2>
                                 <img src="Raw/Png/Subha.png" title="Subhadip">
                             </div>
@@ -404,7 +415,7 @@
                         </div>
                         <div class="testimonialsOne" id="arijit">
                             <div class="testimonialsText">
-                                <h2>“Very good service, tasty menu ...<br> not too expensive” - <span
+                                <h2>“Very good service, tasty menu ...<br> Not too expensive” - <span
                                         class="testimonialsSpan">Arijit Sarkar</span></h2>
                                 <img src="Raw/Png/Arijit.png" title="Arijit">
                             </div>
@@ -415,7 +426,7 @@
                         <div class="testimonialsText">
                             <h2>“Various items, amazing food and<br> super service.” - <span
                                     class="testimonialsSpan">Florence Nniko</span></h2>
-                            <img src="Raw/Png/Debayoon.png" title="Debayoon">
+                            <img src="Raw/Png/Debayoon.png" title="Florence Nniko">
                         </div>
                         <h3>Writer</h3>
                     </div>
@@ -435,7 +446,7 @@
                                 <ul class="carousel__list">
                                     <div class="carousel__item" id="blogsOne">
                                         <img src="Raw/Jpg/blog1.jpg" alt="image" title="Speedy Chicken And Egg Noodle">
-                                        <h2>deliciously fluffy pancakes</h2>
+                                        <h2>Speedy chicken And egg noodle</h2>
                                         <hr>
                                         <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
                                     </div>
@@ -457,17 +468,17 @@
                                         <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
                                     </div><div class="carousel__item" id="blogsOne">
                                         <img src="Raw/Jpg/blog5.jpg" alt="image" title="Paneer Tikka">
-                                        <h2> popular north indian paneer tikka</h2>
+                                        <h2> Popular north indian paneer tikka</h2>
                                         <hr>
                                         <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
                                     </div><div class="carousel__item" id="blogsOne">
                                         <img src="Raw/Jpg/blog6.jpg" alt="image" title="Sweet Potato Curry">
-                                        <h2>slightly spicy sweet potato curry</h2>
+                                        <h2>Slightly spicy sweet potato curry</h2>
                                         <hr>
                                         <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
                                     </div><div class="carousel__item" id="blogsOne">
                                         <img src="Raw/Jpg/blog7.jpg" alt="image" title="Fluffy Pancakes">
-                                        <h2>deliciously fluffy pancakes</h2>
+                                        <h2>Deliciously fluffy pancakes</h2>
                                         <hr>
                                         <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
                                     </div><div class="carousel__item" id="blogsOne">
@@ -518,15 +529,14 @@
                                 <h2 class="footerHeading">FOLLOW US</h2>
                                 <a href="#">
                                     <!-- <i class="fa-brands fa-linkedin"></i> -->
-                                    <i class="fa-brands fa-facebook-f" id="facebook" title="facebook"></i>
+                                    <i class="fa-brands fa-facebook-f" id="facebook" title="Facebook"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa-brands fa-linkedin-in" id="linkedin" title="linkedin"></i>
+                                    <i class="fa-brands fa-linkedin-in" id="linkedin" title="Linkedin"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa-brands fa-instagram" id="instagram" title="instagram"></i>
+                                    <i class="fa-brands fa-instagram" id="instagram" title="Instagram"></i>
                                 </a>
-
 
                             </div>
                         </div>
@@ -559,22 +569,22 @@
                             <div class="visa">
                                 <h2 class="footerHeading">WE ACCEPT</h2>
                                 <a href="#">
-                                    <i class="fa-brands fa-cc-visa" title="visa" id="visaColor"></i>
+                                    <i class="fa-brands fa-cc-visa" title="Visa" id="visaColor"></i>
                                 </a>
                                 <a href="# ">
-                                    <i class="fa-brands fa-apple-pay" title="apple pay" id="appleColor"></i>
+                                    <i class="fa-brands fa-apple-pay" title="Apple Pay" id="appleColor"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa-brands fa-cc-mastercard" title="mastercard" id="mastercardColor"></i>
+                                    <i class="fa-brands fa-cc-mastercard" title="Mastercard" id="mastercardColor"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa-brands fa-google-pay" title="google pay" id="googleColor"></i>
+                                    <i class="fa-brands fa-google-pay" title="Google Pay" id="googleColor"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa-brands fa-stripe" title="stripe" id="stripeColor"></i>
+                                    <i class="fa-brands fa-stripe" title="Stripe" id="stripeColor"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa-brands fa-amazon-pay" title="amazon pay" id="amazonColor"></i>
+                                    <i class="fa-brands fa-amazon-pay" title="Amazon Pay" id="amazonColor"></i>
                                 </a>
                             </div>
                         </div>
@@ -590,8 +600,11 @@
                             <div>
                                 <h2 class="footerHeading">NEWSLETTER</h2>
                                 <div class="footerNewsl">
-                                    <input type="email" placeholder="Email Address"  id="subscribe">
-                                    <button type="submit" title="Subscribe" onclick="mySubscribe()">Subscribe</button>
+                                    <form>
+
+                                        <input type="email" placeholder="Email Address" autocomplete="off" id="subscribe" required>
+                                        <button type="submit" title="Subscribe">Subscribe</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

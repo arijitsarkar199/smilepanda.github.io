@@ -100,11 +100,3 @@ function carousel() {
 
 carousel();
 // Blogs end
-let subscribe=document.getElementById("subscribe");
-let mySubscribe=()=>{
-    if(subscribe.value==""){
-
-    }else{
-        alert("Subscribe Successfully.")
-    }
-}
