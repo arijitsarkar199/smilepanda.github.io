@@ -10,18 +10,6 @@ function linkclick(){
 
     }
 }
-function linkclick2(){
-    let texts2=document.getElementById("text2").value;
-    let passwords2=document.getElementById("password2").value;
-    if(texts2==0 || passwords2==0){
-        alert("Please fill username and password")
-    }
-    else{
-        window.location.assign("../../index.html")
-
-    }
-}
-
 
 // LandingPage End
 // password start

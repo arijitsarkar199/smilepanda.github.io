@@ -601,7 +601,9 @@ margin-right: 5px;
 .aboutHeading h1 {
     margin-left: 20px;
 }
-
+#VisitUs{
+    font-size: 24px;
+}
 .aboutHeading::before {
     content: "";
     top: 0;
@@ -723,6 +725,9 @@ margin-right: 5px;
         margin-top: 30px;
         padding: 8px 10px 8px 10px;
     }
+    #VisitUs{
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width:588px) and (max-width:768px) {
@@ -783,6 +788,9 @@ margin-right: 5px;
         margin-top: 20px;
         font-size: 10px;
         padding: 8px 10px 8px 10px;
+    }
+    #VisitUs{
+        font-size: 15px;
     }
 }
 
@@ -847,6 +855,9 @@ margin-right: 5px;
         font-size: 8px;
         padding: 5px 8px 5px 8px;
         border: 1px solid #f6b041;
+    }
+    #VisitUs{
+        font-size: 11px;
     }
 }
 
@@ -919,6 +930,9 @@ margin-right: 5px;
         font-size: 6px;
         padding: 4px 7px 4px 7px;
         border: 1px solid #f6b041;
+    }
+    #VisitUs{
+        font-size: 8px;
     }
 }
 
@@ -1560,7 +1574,7 @@ margin-right: 5px;
 
 @media only screen and (min-width:320px) and (max-width:425px) {
     .deliveryAdd {
-        height: 100px;
+        height: 103px;
         margin-top: 18px;
         border-top-left-radius: 25px;
         border-bottom-right-radius: 25px;
@@ -1911,13 +1925,20 @@ margin-right: 5px;
     margin-right: 10px;
     font-size: 18px;
     cursor: pointer;
-    color: rgb(0, 0, 0);
+    color: rgb(236, 39, 39);
+    margin-left: -20px;
+    position: relative;
 }
-
-/* #heart:hover {
-    color: #cf2323;
-} */
-
+#myheart{
+    position: absolute;
+    color: rgb(236, 39, 39);
+    margin-left: -18px;
+    margin-top: 0px;
+    opacity: 0;
+}
+#myheart:hover{
+    opacity: 1;
+}
 @media only screen and (min-width:768px) and (max-width:1151px) {
     .bestSeller {
         margin-top: 50px;
@@ -2152,6 +2173,10 @@ margin-right: 5px;
         margin-right: 7px;
         font-size: 15px;
     }
+    #myheart{
+        margin-left: -15px;
+        margin-top: 0px;
+    }
 }
 
 @media only screen and (min-width:425px) and (max-width:588px) {
@@ -2273,6 +2298,10 @@ margin-right: 5px;
         margin-top: 5px;
         margin-right: 7px;
         font-size: 13px;
+    }
+    #myheart{
+        margin-left: -13px;
+        margin-top: 1px;
     }
 }
 
@@ -2396,6 +2425,10 @@ margin-right: 5px;
         margin-top: 5px;
         margin-right: 2px;
         font-size: 8px;
+    }
+    #myheart{
+        margin-left: -8px;
+        margin-top: 0px;
     }
 }
 /* Best Seller End */
@@ -3942,8 +3975,8 @@ margin-right: 5px;
         margin-top: 13px;
     }
     .testimonialsOne{
-        width: 130px;
-        height: 34px;
+        width: 136px;
+        height: 38px;
     }
     #subhajit::before{
         width: 5%;
@@ -3956,8 +3989,8 @@ margin-right: 5px;
     .testimonialsText img{
         width: 22px;
         height: 22px;
-        margin-left: 119px;
-        margin-top: 20px;
+        margin-left: 125px;
+        margin-top: 25px;
     }
     .testimonialsOne h3{
         margin-right: 16px;
@@ -4017,17 +4050,6 @@ margin-right: 5px;
         width: 5925px;
         height: 120px;
     }
-
-    /* @keyframes mySlid{
-        0%{
-            transform:translateX(-100px)
-        }
-        100%{
-            transform: translateX(calc(-160px*7));
-        }
-        
-    } */
-
     #blogsOne{
         width: 255px;
         height: 205px;
@@ -4419,31 +4441,6 @@ margin-right: 5px;
     .footerTwo h3 span{
         margin-left: 30px;
     }
-    #visaColor:hover{
-        background-color: #1A1F71;
-        color: #ffffff;
-    }
-    #appleColor:hover{
-        background-color: #4b44fa;
-        color: #ffffff;
-    }  
-      #mastercardColor:hover{
-        background-color: #F79E1B ;
-        color: #ffffff;
-    }  
-      #googleColor:hover{
-        background-color: #3A81F1;
-        color: #ffffff;
-    }   
-     #stripeColor:hover{
-        background-color: #008cdd;
-        color: #ffffff;
-    }    
-    #amazonColor:hover{
-        background-color: #FF9900
-        ;
-        color: #ffffff;
-    }
     .visa i{
         margin-left: 5px;
         padding: 2px 4px;
@@ -4451,6 +4448,7 @@ margin-right: 5px;
         font-size: 17px;
         cursor: pointer;
         background-color: #ffffff;
+        background: none;
     }
     .footerThree{
         width: 40%;
@@ -4483,9 +4481,10 @@ margin-right: 5px;
         border: 3px solid #ffffff;
         background-color: #f46b27;
         color: #ffffff;
+        cursor: pointer;
     }
 
-    .footerThree button:hover{
+    .footerThree butButtton:hover{
         background-color: #2c1a1a;
         transition: 0.5s;
     }
@@ -4502,6 +4501,13 @@ margin-right: 5px;
     }
     .Policy h5{
         font-size: 18px;
+    }
+    .Policy a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .Policy a:hover{
+        color: #ffffff;
     }
     @media only screen and (min-width:768px) and (max-width:1151px){
         .footer{
