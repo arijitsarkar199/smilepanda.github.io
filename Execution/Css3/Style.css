@@ -2743,25 +2743,25 @@ nav ul li a:hover::before {
 
     .bestsellerRatings h3 {
         font-size: 6px;
-        margin-left: 5px;
+        margin-left: 3px;
     }
 
     .bestsellerRatings p {
         font-size: 3px;
         padding: 1px;
-        margin-right: 2px;
+        margin-right: 3px;
     }
 
     .bestsellerCards h4 {
         margin-top: 4px;
-        margin-left: 5px;
+        margin-left: 3px;
         font-size: 5px;
     }
 
     .bestsellerCards button {
         margin-top: 5px;
         padding: 1px 6px;
-        margin-left: 5px;
+        margin-left: 3px;
         border-radius: 10px;
         font-size: 5px;
         position: absolute;
@@ -5529,7 +5529,6 @@ ul {
         width: 170px;
         height: 100px;
         border-radius: 5px;
-
     }
 
     .footerThree h2 {
