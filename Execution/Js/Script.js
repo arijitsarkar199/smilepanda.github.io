@@ -83,7 +83,7 @@ let heartClick4 = () => {
 }
 let myhearts5 = document.getElementById("myheart5");
 let heartClick5 = () => {
-    if (myhearts.style.opacity == "1") {
+    if (myhearts5.style.opacity == "1") {
 
         myhearts5.style.opacity = "0";
     } else {
@@ -103,7 +103,7 @@ let heartClick6 = () => {
 }
 let myhearts7 = document.getElementById("myheart7");
 let heartClick7 = () => {
-    if (myhearts.style.opacity == "1") {
+    if (myhearts7.style.opacity == "1") {
 
         myhearts7.style.opacity = "0";
     } else {
