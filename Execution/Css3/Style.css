@@ -2743,25 +2743,24 @@ nav ul li a:hover::before {
 
     .bestsellerRatings h3 {
         font-size: 6px;
-        margin-left: 3px;
+        margin-left: 2px;
     }
 
     .bestsellerRatings p {
         font-size: 3px;
         padding: 1px;
-        margin-right: 3px;
+        margin-right: 2px;
     }
 
     .bestsellerCards h4 {
         margin-top: 4px;
-        margin-left: 3px;
+        margin-left: 2px;
         font-size: 5px;
     }
-
     .bestsellerCards button {
         margin-top: 5px;
         padding: 1px 6px;
-        margin-left: 3px;
+        margin-left: 2px;
         border-radius: 10px;
         font-size: 5px;
         position: absolute;
@@ -4571,7 +4570,7 @@ nav ul li a:hover::before {
 
     .testimonialsOne {
         width: 136px;
-        height: 38px;
+        height: 33px;
     }
 
     #subhajit::before {
@@ -4579,7 +4578,7 @@ nav ul li a:hover::before {
     }
 
     .testimonialsText h2 {
-        font-size: 8px;
+        font-size: 7px;
         margin-left: 11px;
         margin-top: 3px;
     }
@@ -4588,7 +4587,7 @@ nav ul li a:hover::before {
         width: 22px;
         height: 22px;
         margin-left: 125px;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     .testimonialsOne h3 {
@@ -4598,7 +4597,7 @@ nav ul li a:hover::before {
     }
 
     #arijit::before {
-        width: 5%;
+        width: 4%;
     }
 
     #debayoon {
