@@ -569,6 +569,7 @@ nav ul li a:hover::before {
     width: 80%;
     height: 70px;
     position: relative;
+    cursor: pointer;
     border-top: 2px solid #9eef79;
 }
 
