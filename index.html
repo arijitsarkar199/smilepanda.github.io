@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Panda</title>
+    <link rel="stylesheet" href="Execution/Css3/Style.css" type="text/css">
+    <link rel="icon" href="Raw/Png/favicon.png">
+    <link rel="stylesheet" href="Execution/Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
+">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Cherish&family=IBM+Plex+Sans:ital@1&family=Marhey:wght@600&family=Nabla&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <!-- Header Start -->
+        <section id="home" class="myHome">
+            <header class="myheader">
+                <div class="mylogo">
+                    <img src="Raw/Png/logo.png" alt="image" title="Smile Panda" id="logos">
+                </div>
+                <div class="searchbar">
+                    <input type="text" name="search" placeholder="Search..." autocomplete="off" required>
+                    <button type="submit" title="Search">Search</button>
+                </div>
+                <!-- Nav Star -->
+                <nav id="navbar">
+                    <ul>
+                        <i class="fa-sharp fa-solid fa-xmark" id="xmark" onclick="closenav()"></i>
+                        <li><a href="#home" title="Home">HOME</a></li>
+                        <li><a href="#about" title="About">ABOUT</a></li>
+                        <li><a href="#menu" title="Menu">MENU</a></li>
+                        <li><a href="#sectionBlogs" title="Blog">BLOG</a></li>
+                        <li><a href="#footer" title="Contact">CONTACT</a></li>
+                        <li><a href="Execution/Html5/LandingPage.html" title="Sign Out" id="signin">SIGN OUT</a></li>
+                    </ul>
+                </nav>
+                <i class="fa-solid fa-bars" id="fabars" onclick="opennav()"></i>
+                <div class="shoppingCart" id="myshoppingCart">
+                    <span id="counter">1</span>
+                    <i class="fa-solid fa-cart-shopping" title="Add to Cart"></i>
+                </div>
+                <!-- Nav End -->
+            </header>
+        </section>
+        <!-- Header End -->
+        <!-- Slider Start -->
+        <section class="allslides">
+            <figure>
+                <button class="imgButton"><a href="#">Read More</a></button>
+                <img src="Raw/Jpg/slider1.jpg" alt="image">
+                <button class="imgButton"><a href="#">Read More</a></button>
+                <img src="Raw/Jpg/slider2.jpg" alt="image">
+                <button class="imgButton"><a href="#">Read More</a></button>
+                <img src="Raw/Jpg/slider3.jpg" alt="image">
+            </figure>
+        </section>
+        <!-- Slider End -->
+        <!-- Main Start -->
+        <div class="main">
+            <a href="#home">
+                <i class="fa-solid fa-arrow-up" id="arrowUp"></i>
+            </a>
+            <!-- About Start -->
+            <div class="mainAbout">
+                <section id="about" class="myAbout">
+                    <div class="aboutHeading">
+                        <h1>About Us</h1>
+                    </div>
+                    <div class="aboutSection">
+                        <div class="aboutImg">
+                            <div class="aboutTransition">
+                                <img src="Raw/Png/aboutImage.png" alt="image" title="Foods">
+                            </div>
+                        </div>
+                        <div class="aboutText">
+                            <video autoplay muted loop id="myVideos">
+                                <source src="Raw/Video_Mp4/VideoOne.mp4" type="Video/mp4">
+                            </video>
+                            <h1>We cook the best tasty food</h1>
+                            <p>We cook the best food in the entire city, with excellent<br> customer service. We provied
+                                the best meals and at<br> the best price. <span id="VisitUs">Visit us.</span></p>
+                            <button><a href="">Learn History</a></button>
+                        </div>
+                    </div>
+                </section>
+                <div class="scrollableContainer">
+                    <div class="scrollableTwo">
+                        <ul>
+                            <li class="alldis" title="All"><a>All</a></li>
+                            <li title="Vegetarian"><a>Vegetarian</a></li>
+                            <li title="Non-Vegetarian"><a>Non-Vegetarian</a></li>
+                            <li title="Chinese Food"><a>Chinese Food</a></li>
+                            <li title="Indian Thali"><a>Indian Thali</a></li>
+                            <li title="Bengali"><a>Bengali</a></li>
+                            <li title="North India"><a>North India</a></li>
+                            <li title="Fast Food"><a>Fast Food</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- About End -->
+            <!-- Menu Start -->
+            <div class="mainMenu">
+                <section id="menu" class="myMenu">
+                    <div class="menuAll">
+                        <div class="menuHeading">
+                            <h1>Menu</h1>
+                        </div>
+                        <div class="menuButton">
+                            <button>View All<i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="allMenus">
+                        <div class="menuImg" id="biryani" title="Biryani">
+                            <div class="menuImage">
+                                <img src="Raw/Png/menu1.png" alt="image">
+                            </div>
+                            <h1>Biryani</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>120</h4>
+                        </div>
+                        <div class="menuImg" id="momo" title="Momo">
+                            <div class="menuImage">
+                                <img src="Raw/Png/menu2.png" alt="image">
+                            </div>
+                            <h1>Momo</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>85</h4>
+                        </div>
+                        <div class="menuImg" id="chowmein" title="Chowmein">
+                            <div class="menuImage">
+                                <img src="Raw/Png/menu3.png" alt="image">
+                            </div>
+                            <h1>Chowmein</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>100</h4>
+                        </div>
+                        <div class="menuImg" id="burger" title="Burger">
+                            <div class="menuImage">
+                                <img src="Raw/Png/menu4.png" alt="image">
+                            </div>
+                            <h1>Burger</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>80</h4>
+                        </div>
+                    </div>
+                    <div class="allMenus">
+                        <div class="menuImg" id="friedRice" title="Fried Rice">
+                            <div class="menuImage" id="menuImageone">
+                                <img src="Raw/Png/menu5.png" alt="image">
+                            </div>
+                            <h1>Fried Rice</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>135</h4>
+                        </div>
+                        <div class="menuImg" id="rolls" title="Rolls">
+                            <div class="menuImage">
+                                <img src="Raw/Png/menu6.png" alt="image">
+                            </div>
+                            <h1>Rolls</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>75</h4>
+                        </div>
+                        <div class="menuImg" id="supe" title="Soup">
+                            <div class="menuImage" id="menuImagetwo">
+                                <img src="Raw/Png/menu7.png" alt="image">
+                            </div>
+                            <h1>Soup</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>90</h4>
+                        </div>
+                        <div class="menuImg" id="pizza" title="Pizza">
+                            <div class="menuImage">
+                                <img src="Raw/Png/menu8.png" alt="image">
+                            </div>
+                            <h1>Pizza</h1>
+                            <button title="Order Now"><a href="">Order Now</a></button>
+                            <h4><i class="fa-solid fa-indian-rupee-sign"></i>180</h4>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!-- Menu End -->
+            <!-- Delivery Start -->
+            <div class="deliveryAdd" onmouseout="deliveryEvent()">
+                <div class="delivery">
+                    <div id="circleImg"></div>
+                    <img src="Raw/Png/bike.png" alt="image" title="Delivery Boy">
+                </div>
+                <div class="deliveryContent">
+                    <div class="deliveryText">
+                        <h1>We<span class="deliveryTextspan"> Provide</span><br>Delivery Within<br><span
+                                class="deliveryTextspan">30 Minutes</span></h1>
+                    </div>
+                    <div class="deliveryIcons">
+                        <div class="alldeliveryIcons">
+                            <i class="fa-solid fa-clock"></i>
+                            <h3>Free Delivery<br>Within 5KM</h3>
+                        </div>
+                        <div class="alldeliveryIcons">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h3>100+ Delivery<br>Boys</h3>
+                        </div>
+                        <div class="alldeliveryIcons">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3>More Area<br>Coverage</h3>
+                        </div>
+                        <div class="alldeliveryIcons">
+                            <i class="fa-solid fa-shop"></i>
+                            <h3>50+ Restaurant<br>And Cafe</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Delivery End -->
+
+            <!-- Best Seller Start -->
+            <div class="bestSeller">
+                <div class="bestsellerTop">
+                    <div class="bestsellerHeader">
+                        <h1>Best Seller</h1>
+                    </div>
+                    <button>View All<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="allBestseller">
+                    <div class="bestsellerCards" id="bestsellerOne">
+                        <img src="Raw/Jpg/bs1.jpg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Panner Curry</h3>
+                            <p>3.4<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>150 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart" onclick="heartClick()"></i>
+                        </div>
+                    </div>
+                    <div class="bestsellerCards" id="bestsellerTwo">
+                        <img src="Raw/Jpg/bs2.jpeg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Chicken Tikka</h3>
+                            <p>3.9<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>120 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart2" onclick="heartClick2()"></i>
+                        </div>
+                    </div>
+                    <div class="bestsellerCards" id="bestsellerThree">
+                        <img src="Raw/Jpg/bs3.jpg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Indian Thali</h3>
+                            <p>4.2<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>155 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart3" onclick="heartClick3()"></i>
+                        </div>
+                    </div>
+                    <div class="bestsellerCards" id="bestsellerFour">
+                        <img src="Raw/Jpg/bs4.jpg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Banana Leaf Thali</h3>
+                            <p>4.0<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>110 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart4" onclick="heartClick4()"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="allBestseller">
+                    <div class="bestsellerCards" id="bestsellerFive">
+                        <img src="Raw/Jpg/bs5.jpg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Burger Combo</h3>
+                            <p>4.0<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>122 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart5" onclick="heartClick5()"></i>
+                        </div>
+                    </div>
+                    <div class="bestsellerCards" id="bestsellerSix">
+                        <img src="Raw/Jpg/bs6.jpg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Chicken Momo</h3>
+                            <p>4.5<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>85 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart6" onclick="heartClick6()"></i>
+                        </div>
+                    </div>
+                    <div class="bestsellerCards" id="bestsellerSeven">
+                        <img src="Raw/Jpg/bs7.jpg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Chicken Roll</h3>
+                            <p>4.5<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>80 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart7" onclick="heartClick7()"></i>
+                        </div>
+                    </div>
+                    <div class="bestsellerCards" id="bestsellerEight">
+                        <img src="Raw/Jpg/bs8.jpg" alt="image">
+                        <div class="bestsellerRatings">
+                            <h3>Mixed Chowmein</h3>
+                            <p>4.8<i class="fa-solid fa-star"></i></p>
+                        </div>
+                        <h4><i class="fa-solid fa-indian-rupee-sign"></i>115 for one</h4>
+                        <button class="addAnimation" title="Add to Cart" onclick="cardClick()">Add to Cart</button>
+                        <div id="heart">
+                            <i class="fa-regular fa-heart" id="mynewHeart"></i>
+                            <i class="fa-solid fa-heart classmyheart" id="myheart8" onclick="heartClick8()"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Best Seller End -->
+            <!-- Arrivals Start -->
+            <div class="arrivals">
+                <div class="myArrivals">
+                    <video autoplay muted loop id="myVideo">
+                        <source src="Raw/Video_Mp4/VideoThree.mp4" type="Video/mp4">
+                    </video>
+                    <img src="Raw/Png/girl.png" alt="image" title="Girl">
+                    <div class="arrivelsText">
+                        <p class="arrivalsParaone">Special Food Every<br>Time In Our Shop</p>
+                        <button>New Arrivals</button>
+                        <div class="arriveBotton">
+                            <p class="arrivalsParatwo">Order Your Best<br>Food Anytime</p>
+                        </div>
+                    </div>
+                    <div class="newArriveldiv">
+                        <video autoplay muted loop>
+                            <source src="Raw/Video_Mp4/VideoTwo.mp4" type="Video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <!-- Arrivals End -->
+            <!-- Burger Offer Start -->
+            <div class="offers">
+                <div class="myOffers">
+                    <div class="offersImg">
+                        <div class="offersImgall" id="offersImgone"><img alt="image" src="Raw/Png/burger1.png"
+                                title="burger1">
+                        </div>
+                        <div class="offersImgall" id="offersImgtwo"><img alt="image" src="Raw/Png/burger2.png"
+                                title="burger3">
+                        </div>
+                        <div class="offersImgall" id="offersImgthree"><img alt="image" src="Raw/Png/burger3.png"
+                                title="burger2">
+                        </div>
+                        <div class="offersImgall">
+                            <div id="offersImgfour">
+                                <h1>40%</h1>
+                                <h3>OFF*</h3>
+                                <h4>*T&C APPLY</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offersText">
+                        <h1>BURGER</h1>
+                        <h3>Special Offer Deals</h3>
+                        <button title="Order Now">Order Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Burger Offer End -->
+            <!-- Table Reservation Start -->
+            <div class="Tables">
+                <div class="myTables">
+                    <form id="formSubmit">
+                        <h1>Table Reservation</h1>
+                        <div class="tablesPersons">
+                            <i class="fa-solid fa-user-group"></i>
+                            <select name="persons" id="persons">
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Persons</option>
+                                <option value="3">3 Persons</option>
+                                <option value="4">4 Persons</option>
+                                <option value="5">5 Persons</option>
+                            </select>
+                        </div>
+                        <div class="tablesDate">
+                            <h4><i class="fa-solid fa-calendar-days"></i></h4>
+                            <input type="date" name="date" id="date" placeholder="date" required>
+                        </div>
+                        <div class="tablesTime">
+                            <h4><i class="fa-solid fa-clock"></i></h4>
+                            <input type="time" name="time" id="time" placeholder="time" required>
+                        </div>
+                        <div class="tablesText">
+                            <h4><i class="fa-solid fa-file-lines"></i></h4>
+                            <input type="text" name="text" id="text" placeholder="Comments (Optional)"
+                                autocomplete="off">
+                        </div>
+                        <div class="tablesSubmit">
+                            <input type="submit" value="Submit" id="submit" title="Submit" onclick="submitClick()">
+                        </div>
+                    </form>
+                </div>
+                <div class="tablesImg">
+                    <img src="Raw/Png/panda.png" alt="image" title="Girl">
+                    <div class="bloud"></div>
+                    <div class="blodTwo"></div>
+                </div>
+            </div>
+            <!-- Table Reservation End -->
+            <!-- Testimonials Start -->
+            <div class="testimonials">
+                <h1>Testimonials</h1>
+                <p></p>
+                <div>
+                    <div class="oneTestimonial">
+                        <div class="testimonialsOne" id="subhajit">
+                            <div class="testimonialsText">
+                                <h2>“Pizza was delicious.. I will come<br> again.” - <span
+                                        class="testimonialsSpan">Subhadip Singh</span></h2>
+                                <img src="Raw/Png/Subha.png" title="Subhadip">
+                            </div>
+                            <h3>Businessman</h3>
+                        </div>
+                        <div class="testimonialsOne" id="arijit">
+                            <div class="testimonialsText">
+                                <h2>“Very good service, tasty menu ...<br> Not too expensive” - <span
+                                        class="testimonialsSpan">Arijit Sarkar</span></h2>
+                                <img src="Raw/Png/Arijit.png" title="Arijit">
+                            </div>
+                            <h3>Investor</h3>
+                        </div>
+                    </div>
+                    <div class="testimonialsOne" id="debayoon">
+                        <div class="testimonialsText">
+                            <h2>“Various items, amazing food and<br> super service.” - <span
+                                    class="testimonialsSpan">Florence Nniko</span></h2>
+                            <img src="Raw/Png/Debayoon.png" title="Florence Nniko">
+                        </div>
+                        <h3>Writer</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonials End -->
+            <!-- Blogs Start -->
+            <div class="topBlog">
+                <section id="sectionBlogs">
+                    <div class="blog">
+                        <div class="blogText">
+                            <p></p>
+                            <h1>Blogs</h1>
+                        </div>
+                        <section class="carousel">
+                            <div class="carousel__slider">
+                                <ul class="carousel__list">
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog1.jpg" alt="image" title="Speedy Chicken And Egg Noodle">
+                                        <h2>Speedy chicken And egg noodle</h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog2.jpg" alt="image" title="Masala Dosa">
+                                        <h2>Masala dosa with coconut chutney</h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog3.jpg" alt="image" title="Fish Cutlets">
+                                        <h2>Fish cutlets on a plate with salad</h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog4.jpg" alt="image" title="Chicken Pakoras">
+                                        <h2>Check chinese chicken pakoras </h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog5.jpg" alt="image" title="Paneer Tikka">
+                                        <h2> Popular north indian paneer tikka</h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog6.jpg" alt="image" title="Sweet Potato Curry">
+                                        <h2>Slightly spicy sweet potato curry</h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog7.jpg" alt="image" title="Fluffy Pancakes">
+                                        <h2>Deliciously fluffy pancakes</h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                    <div class="carousel__item" id="blogsOne">
+                                        <img src="Raw/Jpg/blog4.jpg" alt="image" title="Chicken Pakoras">
+                                        <h2>Check chinese chicken pakoras </h2>
+                                        <hr>
+                                        <h3>View Post <i class="fa-solid fa-arrow-right"></i></h3>
+                                    </div>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="colorBlogs"></div>
+                </section>
+            </div>
+            <!-- Blogs End -->
+            <!-- Footer Start -->
+            <div>
+                <div class="footerContact">
+                    <h1><u>Contact</u></h1>
+                </div>
+                <section class="footer" id="footer">
+                    <div class="footerOne">
+                        <div>
+                            <div>
+                                <h2 class="footerHeading">QUICK LINKS</h2>
+                                <h3>
+                                    <ul>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#menu">Menu</a></li>
+                                        <li><a href="#sectionBlogs">Blog</a></li>
+                                        <li><a href="#footer">Contact</a></li>
+                                        <li><a href="Execution/Html5/LandingPage.html">Sign In</a></li>
+
+                                    </ul>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2 class="footerHeading">OVERVIEW</h2>
+                                <h3>
+                                    <ul>
+                                        <li><a href="#">Terms of Use</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Local Sitemap</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2 class="footerHeading" id="mymedia">FOLLOW US</h2>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f" id="facebooks" title="Facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-linkedin-in" id="linkedins" title="Linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram" id="instagrams" title="Instagram"></i>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerTwo">
+                        <div>
+                            <div>
+                                <h2 class="footerHeading">COMMUNITY</h2>
+                                <h3>
+                                    <ul>
+                                        <li><a href="#">Community Central</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Help</a></li>
+                                    </ul>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2 class="footerHeading">CONTACT</h2>
+                                <h3><i class="fa-sharp fa-solid fa-location-dot"></i> Thakurnagar,<br><span>North 24
+                                        Parganas,</span><br><span>West Bengal - 743 287</span>
+                                </h3>
+                                <a href="index.html">
+                                    <h3><i class="fa-sharp fa-solid fa-globe"></i>www.smilepanda.com</h3>
+                                </a>
+                                <a href="mailto:foodsmilepanda12@gmail.com">
+                                    <h3><i class="fa-solid fa-envelope"></i>foodsmilepanda12@gmail.com</h3>
+                                </a>
+                                <h3><i class="fa-solid fa-phone"></i>(+91) 82506 54236</h3>
+                            </div>
+                            <div class="visa">
+                                <h2 class="footerHeading">WE ACCEPT</h2>
+                                <a href="#">
+                                    <i class="fa-brands fa-cc-visa" title="Visa" id="visaColor"></i>
+                                </a>
+                                <a href="# ">
+                                    <i class="fa-brands fa-apple-pay" title="Apple Pay" id="appleColor"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-cc-mastercard" title="Mastercard" id="mastercardColor"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-google-pay" title="Google Pay" id="googleColor"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-stripe" title="Stripe" id="stripeColor"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-amazon-pay" title="Amazon Pay" id="amazonColor"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerThree">
+                        <div>
+                            <div>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29392.601776579988!2d88.73795424722465!3d22.947456658993314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8b4f8ffe7f657%3A0x475889b63dcea9bb!2sThakurnagar%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1668712004639!5m2!1sen!2sin"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" class="footerHeading"></iframe>
+                            </div>
+                            <div>
+                                <h2 class="footerHeading">NEWSLETTER</h2>
+                                <div class="footerNewsl">
+                                    <form>
+                                        <input type="email" placeholder="Email Address" autocomplete="off"
+                                            id="subscribe" required>
+                                        <button type="submit" title="Subscribe">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div>
+                                <h2 class="footerHeading">Brand Partners</h2>
+                                <img src="Raw/Png/zomato.png" class="BrandPnrZ" title="Zomato">
+                                <img src="Raw/Png/swiggy.png" class="BrandPnrS" title="Swiggy">
+                                <img src="Raw/Png/nestle.png" class="BrandPnrN" title="Nestle">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="Policy">
+                    <h5>©2023,<a href="">www.smilepanda.com </a>| All Rights Reserved | <a href="#">Privacy Policy.</a>
+                    </h5>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
+        <!-- Main End -->
+    </div>
+    <script src="Execution/Js/Script.js"></script>
+</body>
+
+</html>
